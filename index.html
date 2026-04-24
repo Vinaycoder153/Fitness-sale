@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Transform your body in 90 days with personalised 1-on-1 fitness coaching, custom diet plans, and weekly progress tracking. Start your journey today." />
+  <title>FitCoach Pro — Transform Your Body in 90 Days</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Remix Icons (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION BAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="FitCoach Pro Home">
+        <i class="ri-fire-fill" aria-hidden="true"></i> FitCoach <span>Pro</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Results</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li>
+          <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20your%20fitness%20program"
+             class="nav-cta"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Start coaching on WhatsApp">
+            <i class="ri-whatsapp-fill" aria-hidden="true"></i> WhatsApp Me
+          </a>
+        </li>
+      </ul>
+
+      <!-- Hamburger toggle for mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" role="menu">
+      <a href="#services" role="menuitem">Services</a>
+      <a href="#testimonials" role="menuitem">Results</a>
+      <a href="#pricing" role="menuitem">Pricing</a>
+      <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20your%20fitness%20program"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="mobile-cta"
+         role="menuitem">
+        <i class="ri-whatsapp-fill" aria-hidden="true"></i> Start on WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       SECTION 1 — HERO (Above the fold)
+  ============================================================ -->
+  <section class="hero" id="hero" aria-label="Hero section">
+    <!-- Animated background orbs for visual depth -->
+    <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb--3" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <!-- Eyebrow label -->
+      <div class="hero-eyebrow reveal">
+        <i class="ri-medal-fill" aria-hidden="true"></i>
+        Trusted by 500+ Clients Across India
+      </div>
+
+      <h1 class="hero-headline reveal">
+        Transform Your Body in<br />
+        <span class="gradient-text">90 Days</span> — Without<br />
+        Gym Confusion or Crash Diets
+      </h1>
+
+      <p class="hero-subheadline reveal">
+        Get a fully personalised fitness &amp; diet plan crafted just for your body, lifestyle, and goal —
+        whether it's fat loss, muscle gain, or simply feeling <strong>unstoppable</strong>.
+        Zero guesswork. 100% results.
+      </p>
+
+      <!-- Primary CTA -->
+      <div class="hero-cta-group reveal">
+        <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20your%20fitness%20program"
+           class="btn btn--primary btn--lg"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Start your fitness journey on WhatsApp">
+          <i class="ri-whatsapp-fill" aria-hidden="true"></i>
+          Start Now on WhatsApp
+        </a>
+        <a href="#services" class="btn btn--ghost btn--lg" aria-label="Learn about our services">
+          See How It Works <i class="ri-arrow-down-line" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Trust badges -->
+      <div class="trust-badges reveal" aria-label="Trust indicators">
+        <div class="badge">
+          <i class="ri-shield-check-fill" aria-hidden="true"></i>
+          <span>500+ Transformations</span>
+        </div>
+        <div class="badge">
+          <i class="ri-star-fill" aria-hidden="true"></i>
+          <span>4.9 / 5 Rating</span>
+        </div>
+        <div class="badge">
+          <i class="ri-time-fill" aria-hidden="true"></i>
+          <span>Results in 4 Weeks</span>
+        </div>
+        <div class="badge">
+          <i class="ri-customer-service-2-fill" aria-hidden="true"></i>
+          <span>24/7 Support</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2 — SERVICES / BENEFITS
+  ============================================================ -->
+  <section class="services" id="services" aria-label="Services and benefits">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What You Get</span>
+        <h2>Everything You Need to<br /><span class="gradient-text">Succeed — All in One Place</span></h2>
+        <p>No cookie-cutter programs. No generic advice. Just a proven system built around <em>you</em>.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Card 1 -->
+        <div class="service-card reveal" role="article" aria-label="Personal Coaching service">
+          <div class="service-icon" aria-hidden="true">
+            <i class="ri-user-star-fill"></i>
+          </div>
+          <h3>1-on-1 Personal Coaching</h3>
+          <p>Work directly with your dedicated coach who understands your body, schedule, and limitations. No more one-size-fits-all workouts that leave you injured or frustrated.</p>
+          <ul class="service-features" role="list">
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Customised workout programs</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Form corrections via video</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Adapted every 2 weeks</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card reveal" role="article" aria-label="Diet Plans service">
+          <div class="service-icon service-icon--green" aria-hidden="true">
+            <i class="ri-leaf-fill"></i>
+          </div>
+          <h3>Smart Indian Diet Plans</h3>
+          <p>Enjoy your favourite foods while hitting your goals. Our plans are designed around Indian meals, your budget, and your taste preferences — no bland boiled chicken.</p>
+          <ul class="service-features" role="list">
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Macro-balanced Indian meals</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Veg &amp; non-veg options</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Weekly meal plan updates</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card reveal" role="article" aria-label="Weekly Tracking service">
+          <div class="service-icon service-icon--purple" aria-hidden="true">
+            <i class="ri-bar-chart-grouped-fill"></i>
+          </div>
+          <h3>Weekly Progress Tracking</h3>
+          <p>Data-driven coaching keeps you accountable and your momentum high. Every check-in gives us the insights to fine-tune your plan so you never hit a plateau.</p>
+          <ul class="service-features" role="list">
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Body measurements &amp; weight logs</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Progress photos analysis</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Adjustments based on results</li>
+          </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card reveal" role="article" aria-label="Support service">
+          <div class="service-icon service-icon--orange" aria-hidden="true">
+            <i class="ri-customer-service-2-fill"></i>
+          </div>
+          <h3>Unlimited WhatsApp Support</h3>
+          <p>Stuck at the gym? Confused about a meal? Just ping your coach. Get real answers in minutes — not hours. Because fitness is a daily journey, not a monthly check-in.</p>
+          <ul class="service-features" role="list">
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Same-day response guarantee</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Motivation &amp; accountability</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Emergency plan adjustments</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3 — TESTIMONIALS / SOCIAL PROOF
+  ============================================================ -->
+  <section class="testimonials" id="testimonials" aria-label="Client testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Real Results</span>
+        <h2>Real People. Real Transformations.<br /><span class="gradient-text">No Filters. No Excuses.</span></h2>
+        <p>These aren't Instagram models. They're everyday people who made one decision and changed everything.</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card reveal" role="article" aria-label="Testimonial from Priya Sharma">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="ri-star-fill" aria-hidden="true"></i>
+            <i class="ri-star-fill" aria-hidden="true"></i>
+            <i class="ri-star-fill" aria-hidden="true"></i>
+            <i class="ri-star-fill" aria-hidden="true"></i>
+            <i class="ri-star-fill" aria-hidden="true"></i>
+          </div>
+          <blockquote class="testimonial-text">
+            "I was 78 kg and struggling with PCOS-related weight gain for 3 years. In just 10 weeks I lost 12 kg and my energy levels are through the roof. The diet plan didn't feel like a diet at all — I ate dal, roti, everything!"
+          </blockquote>
+          <div class="testimonial-result">
+            <i class="ri-arrow-down-circle-fill" aria-hidden="true"></i>
+            Lost <strong>12 kg</strong> in 10 weeks
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">PS</div>
+            <div>
+              <div class="testimonial-name">Priya Sharma</div>
+              <div class="testimonial-role">Software Engineer, Bangalore</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card testimonial-card--featured reveal" role="article" aria-label="Testimonial from Rahul Verma">
+          <div class="featured-badge" aria-label="Featured transformation">⭐ Top Transformation</div>
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="ri-star-fill" aria-hidden="true"></i>
+            <i class="ri-star-fill" aria-hidden="true"></i>
+            <i class="ri-star-fill" aria-hidden="true"></i>
+            <i class="ri-star-fill" aria-hidden="true"></i>
+            <i class="ri-star-fill" aria-hidden="true"></i>
+          </div>
+          <blockquote class="testimonial-text">
+            "I've been going to the gym for 2 years but saw zero results. Within 6 weeks of joining FitCoach Pro, I gained 5 kg of visible muscle. The weekly check-ins kept me consistent and the form guidance via video was a game-changer."
+          </blockquote>
+          <div class="testimonial-result">
+            <i class="ri-arrow-up-circle-fill" aria-hidden="true"></i>
+            Gained <strong>5 kg muscle</strong> in 6 weeks
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar testimonial-avatar--featured" aria-hidden="true">RV</div>
+            <div>
+              <div class="testimonial-name">Rahul Verma</div>
+              <div class="testimonial-role">Marketing Manager, Mumbai</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card reveal" role="article" aria-label="Testimonial from Anita Nair">
+          <div class="testimonial-stars" aria-label="5 out of 5 stars">
+            <i class="ri-star-fill" aria-hidden="true"></i>
+            <i class="ri-star-fill" aria-hidden="true"></i>
+            <i class="ri-star-fill" aria-hidden="true"></i>
+            <i class="ri-star-fill" aria-hidden="true"></i>
+            <i class="ri-star-fill" aria-hidden="true"></i>
+          </div>
+          <blockquote class="testimonial-text">
+            "As a working mom with two kids I thought fitness was impossible for me. The coach gave me 30-minute home workouts that fit my schedule. I dropped 3 dress sizes in 3 months and I've never felt more confident in my own skin."
+          </blockquote>
+          <div class="testimonial-result">
+            <i class="ri-arrow-down-circle-fill" aria-hidden="true"></i>
+            Dropped <strong>3 dress sizes</strong> in 3 months
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">AN</div>
+            <div>
+              <div class="testimonial-name">Anita Nair</div>
+              <div class="testimonial-role">Teacher &amp; Mom of 2, Chennai</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4 — PRICING
+  ============================================================ -->
+  <section class="pricing" id="pricing" aria-label="Pricing plans">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Invest in Yourself</span>
+        <h2>Simple Pricing,<br /><span class="gradient-text">Extraordinary Results</span></h2>
+        <p>Choose the plan that fits your goal. Every plan includes personalised coaching — because you deserve more than a YouTube playlist.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Plan: Basic -->
+        <div class="pricing-card reveal" role="article" aria-label="Basic plan">
+          <div class="pricing-plan-name">Basic</div>
+          <div class="pricing-price" aria-label="Price: 2,999 rupees per month">
+            <span class="pricing-currency">₹</span>2,999
+            <span class="pricing-period">/month</span>
+          </div>
+          <p class="pricing-tagline">Perfect to get started &amp; build the habit</p>
+          <ul class="pricing-features" role="list">
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Custom workout plan</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Indian diet plan</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Bi-weekly check-in</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> WhatsApp support (48 hr reply)</li>
+            <li class="pricing-feature--disabled"><i class="ri-close-fill" aria-hidden="true"></i> Video form review</li>
+            <li class="pricing-feature--disabled"><i class="ri-close-fill" aria-hidden="true"></i> Emergency plan changes</li>
+          </ul>
+          <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20the%20Basic%20plan"
+             class="btn btn--ghost btn--full"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Start Basic plan on WhatsApp">
+            <i class="ri-whatsapp-fill" aria-hidden="true"></i> Start Basic Plan
+          </a>
+        </div>
+
+        <!-- Plan: Standard (HIGHLIGHTED) -->
+        <div class="pricing-card pricing-card--featured reveal" role="article" aria-label="Standard plan - Most popular">
+          <div class="pricing-badge" aria-label="Most popular plan">🔥 Most Popular</div>
+          <div class="pricing-plan-name">Standard</div>
+          <div class="pricing-price" aria-label="Price: 4,999 rupees per month">
+            <span class="pricing-currency">₹</span>4,999
+            <span class="pricing-period">/month</span>
+          </div>
+          <p class="pricing-tagline">Best for serious fat loss or muscle gain</p>
+          <ul class="pricing-features" role="list">
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Custom workout plan</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Indian diet plan</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> <strong>Weekly</strong> check-in</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> WhatsApp support (24 hr reply)</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Video form review</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Emergency plan changes</li>
+          </ul>
+          <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20the%20Standard%20plan"
+             class="btn btn--primary btn--full"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Start Standard plan on WhatsApp">
+            <i class="ri-whatsapp-fill" aria-hidden="true"></i> Start Standard Plan
+          </a>
+        </div>
+
+        <!-- Plan: Premium -->
+        <div class="pricing-card reveal" role="article" aria-label="Premium plan">
+          <div class="pricing-plan-name">Premium</div>
+          <div class="pricing-price" aria-label="Price: 8,999 rupees per month">
+            <span class="pricing-currency">₹</span>8,999
+            <span class="pricing-period">/month</span>
+          </div>
+          <p class="pricing-tagline">For elite performance &amp; rapid transformation</p>
+          <ul class="pricing-features" role="list">
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Custom workout plan</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Advanced nutrition strategy</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> <strong>Daily</strong> check-in</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> WhatsApp + voice call support</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Weekly video analysis</li>
+            <li><i class="ri-check-fill" aria-hidden="true"></i> Supplement &amp; recovery guide</li>
+          </ul>
+          <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20the%20Premium%20plan"
+             class="btn btn--ghost btn--full"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Start Premium plan on WhatsApp">
+            <i class="ri-whatsapp-fill" aria-hidden="true"></i> Start Premium Plan
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Money-back guarantee -->
+      <div class="guarantee reveal" role="note" aria-label="Money-back guarantee">
+        <i class="ri-shield-check-fill" aria-hidden="true"></i>
+        <p><strong>30-Day Results Guarantee</strong> — If you follow the plan and don't see measurable results in 30 days, we'll refund every rupee. No questions asked.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5 — FINAL CTA
+  ============================================================ -->
+  <section class="final-cta" id="contact" aria-label="Final call to action">
+    <div class="container">
+      <!-- Decorative orbs -->
+      <div class="cta-orb cta-orb--1" aria-hidden="true"></div>
+      <div class="cta-orb cta-orb--2" aria-hidden="true"></div>
+
+      <div class="final-cta-content">
+        <div class="cta-eyebrow reveal">
+          <i class="ri-fire-fill" aria-hidden="true"></i>
+          Limited Spots Available — Only 10 New Clients / Month
+        </div>
+
+        <h2 class="reveal">
+          Ready to Finally<br />
+          <span class="gradient-text">Transform Your Body?</span>
+        </h2>
+
+        <p class="cta-subtext reveal">
+          Stop scrolling. Stop second-guessing. The best time to start was last year.<br />
+          The second-best time is <strong>right now</strong>.
+        </p>
+
+        <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20your%20fitness%20program"
+           class="btn btn--primary btn--xl pulse"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Start your fitness transformation on WhatsApp">
+          <i class="ri-whatsapp-fill" aria-hidden="true"></i>
+          Let's Start My Transformation
+        </a>
+
+        <p class="cta-note reveal">
+          <i class="ri-time-fill" aria-hidden="true"></i>
+          Free consultation call included with every plan &nbsp;|&nbsp;
+          <i class="ri-lock-fill" aria-hidden="true"></i>
+          No credit card required
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo" aria-label="FitCoach Pro Home">
+          <i class="ri-fire-fill" aria-hidden="true"></i> FitCoach <span>Pro</span>
+        </a>
+        <p>India's most personalised online fitness coaching. Real plans. Real coaches. Real results.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#testimonials">Results</a>
+        <a href="#pricing">Pricing</a>
+        <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20your%20fitness%20program"
+           target="_blank"
+           rel="noopener noreferrer">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2024 FitCoach Pro. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       STICKY WHATSAPP CTA (mobile-first floating button)
+  ============================================================ -->
+  <a href="https://wa.me/919876543210?text=I'm%20interested%20in%20your%20fitness%20program"
+     class="sticky-cta"
+     id="sticky-cta"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp">
+    <i class="ri-whatsapp-fill" aria-hidden="true"></i>
+    <span>Chat Now</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
